@@ -25,7 +25,7 @@ Slides content can be easily read directly on GitHub in the [decks](decks) folde
 
 ### 2. Website on Netlify
 
-The slides are available on Netlify as a static website - [devops-course.netlify.app][https://devops-course.netlify.app/]
+The slides are available on Netlify as a static website - [devops-course.netlify.app](https://devops-course.netlify.app/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/53585012-d83b-481f-856c-c5c2560b7a74/deploy-status)](https://app.netlify.com/sites/devops-course/deploys)
 
