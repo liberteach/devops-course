@@ -19,13 +19,19 @@ For Windows users it is recommended to use [Git Bash](https://gitforwindows.org/
 
 ## Usage
 
-### 1. Reading slides content
+### 1. Reading slides' content
 
 Slides content can be easily read directly on GitHub in the [decks](decks) folder.
 
-### 2. Build slides locally
+### 2. Website on Netlify
 
-You can also build slides and read them in a browser.
+The slides are available on Netlify as a static website - [devops-course.netlify.app][https://devops-course.netlify.app/]
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/53585012-d83b-481f-856c-c5c2560b7a74/deploy-status)](https://app.netlify.com/sites/devops-course/deploys)
+
+### 3. Build slides locally as a static website
+
+You can also build a static website and read slides in a browser.
 
 This project uses [Gatsby.js](https://www.gatsbyjs.org/) framework and requires [Node.js](https://nodejs.org/en/) installed. To build and run slides on your local run:
 
