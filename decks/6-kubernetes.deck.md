@@ -83,7 +83,6 @@ We will use today these tools:
   1. [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) - runs a single-node Kubernetes cluster on your personal computer
   2. [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) - Kubernetes command-line tool to run commands against Kubernetes clusters
   3. [Web UI (Dashboard)](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
-  4. [Kompose (Kubernetes + Compose)](https://github.com/kubernetes/kompose) -  to help move `docker-compose` file to Kubernetes
 
 [More Kubernetes tools](https://kubernetes.io/docs/reference/tools/)
 
@@ -95,14 +94,9 @@ You will start a single node Kubernetes cluster using Minikube and deploy contai
 
 ## Objectives
 
-**Part 1 (classwork):**
-
 1. Installation
 2. Quick start
 3. Explore the local Kubernetes cluster
-
-**Part 2 (homework, included to the project):**
-
 4. Create an image of your app on Docker Hub
 5. Deploy an app using `kubectl`
 6. Deploy an app using Manifest yaml files
