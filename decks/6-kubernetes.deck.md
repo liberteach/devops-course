@@ -49,13 +49,13 @@ gatsby-slide
 ## Videos
 
 - [Kubernetes Explained](https://www.youtube.com/watch?v=aSrqRSk43lY)
-- [Kubernetes in 7 mins](https://www.youtube.com/watch?v=NChhdOZV4sY)
+- [Kubernetes: Understanding Resources via YAML, Deployments, Replica Sets, and Pods](https://www.youtube.com/watch?v=ohSUtEfDefc) (8 min)
+- [Kubernetes in 7 mins](https://www.youtube.com/watch?v=NChhdOZV4sY) (7 min, in french)
 - [(Advanced) Kubernetes Deconstructed: Understanding Kubernetes by Breaking It Down](https://www.youtube.com/watch?v=90kZRyPcRZw)
 
 ## Links
 
 - [Kubernetes official documentation](https://kubernetes.io/docs/home/)
-- [Kubernetes concepts](https://kubernetes.io/docs/concepts/)
 - [The Illustrated Children’s Guide to Kubernetes](https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/)
 
 ## Tutorials
@@ -63,6 +63,34 @@ gatsby-slide
 - [Katacoda course](https://www.katacoda.com/courses/kubernetes)
 - [Learn Kubernetes Basics (official documentation)](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 
+gatsby-slide
+
+# Kubernetes objects
+
+Kubernetes contains a number of abstractions - Kubernetes objects
+
+**Lower-level abstraction objects:**
+
+- **Pod** - contains containers
+- **Service** - provide networking
+- **Volume** -  storage
+- **Namespace** - isolation
+
+**Higher-level abstraction objects:**:
+
+- **Deployment** - creates pods
+- **ReplicaSet**
+- **DaemonSet**
+- **StatefulSet**
+- **Job**
+
+## Links:
+
+- [Kubernetes concepts](https://kubernetes.io/docs/concepts/)
+
+## Videos:
+
+- [Kubernetes: Understanding Resources via YAML, Deployments, Replica Sets, and Pods](https://www.youtube.com/watch?v=ohSUtEfDefc) (8 min)
 gatsby-slide
 
 # Kubernetes clusters
