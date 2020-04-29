@@ -2,19 +2,6 @@
 title: Microservices & Service mesh - Istio
 ---
 
-# DevOps course overview
-
-1. Introduction to DevOps
-2. Source Control Management (SCM) - Git
-3. Continuous Testing, Continuous Integration & Continuous Delivery (CI/CD) - Travis CI and Heroku
-4. Containers - Docker
-5. Containers orchestration - Docker Compose
-6. Containers orchestration - Kubernetes
-7. **Microservices & Service mesh - Istio**
-8. Infrastructure as code (IaC) - Ansible
-
-gatsby-slide
-
 # Microservices architecture
 
 **Microservices (microservice architecture)** - a style that structures an application as a collection of services that are:

@@ -24,8 +24,6 @@ gatsby-slide
 7. Microservices & Service mesh - Istio
 8. Infrastructure as code (IaC) - Ansible
 
-A project at the end of the course.
-
 gatsby-slide
 
 # DevOps
