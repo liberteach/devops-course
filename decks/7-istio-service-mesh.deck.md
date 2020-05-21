@@ -16,8 +16,8 @@ title: Microservices & Service mesh - Istio
 
 **Monolith means composed all in one piece.** The Monolithic application describes a single-tiered software application in which different components combined into a single program from a single platform.
 
-## Videos:
-  - [Comprendre les microservices en 6 minutes](https://www.youtube.com/watch?v=ucHwp1jUS2w) (6 min)
+## Video references
+
   - Microservices vs Monolithic - [What are Microservices?](https://www.youtube.com/watch?v=CdBtNQZH8a4) (7 min)
 
 gatsby-slide
@@ -26,45 +26,55 @@ gatsby-slide
 
 **Service mesh** - an infrastructure layer for facilitating service-to-service communications between microservices, often using a **sidecar proxy**.
 
-**Provides:**
+Provides **transparent and language-independent** way to flexible and easily automate application network functions:
 
-  - Connection between microservices
-  - Observability into communications
-  - Secure
+  - Connection
   - Control
+  - Observability
+  - Secure
+
+![Service Mesh](../img/istio/service-mesh.png)
 
 ## Platforms implementing a service mesh:
 
-  - Istio
+  - **Istio**
   - Consul
   - Linkerd
-  - ...
 
-## Videos
+## Video references
 
-  - [Service Mesh : l'essentiel en 4 minutes (avec Istio)](https://www.youtube.com/watch?v=o6Zh6AaeYXw) (4 min)
   - [What is a service mesh](https://www.youtube.com/watch?v=vh1YtWjfcyk&t=38s) (10 min)
-  - An excellent presentation - [Demystifying Service Mesh](https://www.youtube.com/watch?v=bEFILWrRJJ4) (36 min)
+  - [Demystifying Service Mesh](https://www.youtube.com/watch?v=bEFILWrRJJ4) (36 min) - an excellent presentation
 
 gatsby-slide
 
 # Istio
 
-**Istio** - a platform that does a service mesh (provides a uniform way to secure, connect, and monitor microservices).
+**Istio** - a platform that implements a service mesh.
 
-**Provides operational requirements:**
+![Istio logo](../img/istio/istio-logo.jpg)
 
+**Benefits**
+
+- Understand **network interaction** between services
+- Traffic **inspection** between services
+- Granular policies (specific users, specific groups, or all users) - **percentage-based** routing
+- **Automate** policies across thousands of services
+- **Decouple** the network from your application code
+
+**You can easily do with Istio:**
+
+  - canary rollout - ** we will do today**
   - A/B testing
-  - canary rollout (deployment)
   - rate limiting
   - access control
   - end-to-end authentication
 
-## Videos
+## Video references
 
   - [What is Istio?](https://www.youtube.com/watch?v=1iyFq2VaL5Y) (4 min)
   - [Istio Service Mesh Explained](https://www.youtube.com/watch?v=6zDrLvpfCK4) (5 min)
-  - Representing a canary rollout - [Kubernetes drone demo: Using Istio to manage app traffic](https://www.youtube.com/watch?v=QTD-gqS2E7w) (2 min)
+  - [Kubernetes drone demo: Using Istio to manage app traffic](https://www.youtube.com/watch?v=QTD-gqS2E7w) (2 min) - representing a canary rollout
 
 ## Links
 
@@ -73,31 +83,49 @@ gatsby-slide
 
 gatsby-slide
 
-# You work
+# How Istio works
 
-## Objectives
+## Sidecar proxy
 
-**Part 1 (classwork):**
+- **Sidecar proxies** ([Envoy](https://www.envoyproxy.io/)) sit next to workloads (in Kubernetes pods)
+- Proxies **mediate** all inbound/outbound traffic
 
-1. Quick start with Istio
-2. Route requests
-3. Traffic shifting (canary rollout)
-
-**Part 2 (homework, included to the project):**
-
-4. Deploy your application
-5. Route requests between 2 versions
-6. Traffic shifting 2 versions
+![Sidecar proxies](../img/istio/1_side.png)
 
 gatsby-slide
 
-# You work. Part 1
+# How Istio works
 
-## 1. Quick start with Istio
+## Control Plane
 
-This task lets you quickly evaluate Istio.
+- **Control Plane** deployed to Kubernetes
+- **Isito API** installed as Kubernetes CRDs (Custom Resource Definitions)
 
-### Instructions
+![Control Plane](../img/istio/2_control_pane.png)
+
+gatsby-slide
+
+# How Istio works
+
+![Istio architecture](../img/istio/istio.jpg)
+
+gatsby-slide
+
+# Our work objectives
+
+1. Quick start with Istio (using Bookinfo example application)
+2. Traffic management: Request routing
+3. Traffic Management: Traffic shifting (canary rollout)
+
+Bookinfo example application:
+
+![Bookinfo application](../img/istio/bookinfo.png)
+
+gatsby-slide
+
+# 1. Quick start with Istio
+
+## Instructions
 
 1. [Install Minikube and start a Kubernetes cluster](https://istio.io/docs/setup/platform-setup/minikube/)
 
@@ -110,16 +138,14 @@ After Minikube installation run:
 
 Do everything up to the [Next steps](https://istio.io/docs/setup/getting-started/#next-steps) section.
 
-### The results
+## Results
 
   - running [Bookinfo example application](https://istio.io/docs/examples/bookinfo/) and available at `http://$GATEWAY_URL/productpage` (where $GATEWAY_URL - is specific IP and PORT for every deployment)
   - running [Kiali dashboard](https://kiali.io/) with an overview of your mesh with the relationships between the services, like on [this image](https://istio.io/docs/setup/getting-started/kiali-example2.png).
 
 gatsby-slide
 
-# You work. Part 1
-
-## 2. Request Routing
+# 2. Request routing
 
 This task shows you how to route requests dynamically to multiple versions of a microservice.
 
@@ -127,16 +153,14 @@ This task shows you how to route requests dynamically to multiple versions of a 
 
 - [Request routing](https://istio.io/docs/tasks/traffic-management/request-routing/)
 
-### The results
+### Results
 
   - sending 100% of the traffic to the `v1` version of each of the Bookinfo services
   - setting a rule to selectively send traffic to version `v2` of the reviews service based on a custom `end-user` header
 
 gatsby-slide
 
-# You work. Part 1
-
-## 3. Traffic Shifting (canary rollout)
+# 3. Traffic Shifting (canary rollout)
 
 This task shows you how to gradually migrate traffic from an older version to a new version.
 
@@ -144,18 +168,8 @@ This task shows you how to gradually migrate traffic from an older version to a 
 
 - [Traffic shifting](https://istio.io/docs/tasks/traffic-management/traffic-shifting/)
 
-### The results
+### Results
 
   - migrating traffic from an old to new version of the `reviews` service using Istio’s weighted routing feature
 
 gatsby-slide
-
-# You work. Part 2
-
-4. Deploy your application
-5. Route requests between 2 versions of the app
-6. Traffic shifting between 2 versions
-
-### The results
-
-  - Yaml deployments files pushed to git repository
