@@ -33,7 +33,7 @@ Provides **transparent and language-independent** way to flexible and easily aut
   - Observability
   - Secure
 
-![Service Mesh](img/istio/service-mesh.png)
+![Service Mesh](https://www.redhat.com/cms/managed-files/service-mesh-1680.png)
 
 ## Platforms implementing a service mesh:
 
@@ -52,7 +52,7 @@ gatsby-slide
 
 **Istio** - a platform that implements a service mesh.
 
-![Istio logo](img/istio/istio-logo.jpg)
+![Istio logo](https://www.zdnet.fr/i/edit/ne/2018/06/istio_610.jpg)
 
 **Benefits**
 
@@ -92,7 +92,7 @@ gatsby-slide
 - **Sidecar proxies** ([Envoy](https://www.envoyproxy.io/)) sit next to workloads (in Kubernetes pods)
 - Proxies **mediate** all inbound/outbound traffic
 
-![Sidecar proxies](img/istio/1_side.png)
+![Sidecar proxies](https://image.prntscr.com/image/xqnB1UYWQ3_dcSxQ5Ndwdw.png)
 
 gatsby-slide
 
@@ -101,27 +101,27 @@ gatsby-slide
 ## Control Plane
 
 - **Control Plane** deployed to Kubernetes
-- **Isito API** installed as Kubernetes CRDs (Custom Resource Definitions)
+- **Isito API** installed as Kubernetes CRDs (Custom Resource Definitions) dvsa
 
-![Control Plane](img/istio/2_control_pane.png)
+![Control Plane](https://image.prntscr.com/image/TS05yv0LRqmPbZi8BGwfaA.png)
 
 gatsby-slide
 
 # How Istio works
 
-![Istio architecture](img/istio/istio.jpg)
+![Istio architecture](https://image.prntscr.com/image/fDXtWidVTe_kxStvPrDmWw.png)
 
 gatsby-slide
 
 # Our work objectives
 
-1. Quick start with Istio (using Bookinfo example application)
+1. Quick start with Istio (using [Bookinfo example application](https://istio.io/docs/examples/bookinfo/))
 2. Traffic management: Request routing
 3. Traffic Management: Traffic shifting (canary rollout)
 
 Bookinfo example application:
 
-![Bookinfo application](img/istio/bookinfo.png)
+![Bookinfo application](https://istio.io/docs/examples/bookinfo/noistio.svg)
 
 gatsby-slide
 
@@ -143,7 +143,7 @@ Do everything up to the [Next steps](https://istio.io/docs/setup/getting-started
 ## Results
 
   - running [Bookinfo example application](https://istio.io/docs/examples/bookinfo/) and available at `http://$GATEWAY_URL/productpage` (where $GATEWAY_URL - is specific IP and PORT for every deployment)
-  - running [Kiali dashboard](https://kiali.io/) with an overview of your mesh with the relationships between the services, like on [this image](https://istio.io/docs/setup/getting-started/kiali-example2.png).
+  - running [Kiali dashboard](https://kiali.io/) with an overview of your mesh with the relationships between the services, like here:
 
   ![this image](https://istio.io/docs/setup/getting-started/kiali-example2.png)
 
@@ -160,7 +160,7 @@ This task shows you how to route requests dynamically to multiple versions of a 
 ### Results
 
   - sending 100% of the traffic to the `v1` version of each of the Bookinfo services
-  - setting a rule to selectively send traffic to version `v2` of the reviews service based on a custom `end-user` header
+  - setting a rule to selectively send traffic to version `v2` of the "reviews" service based on a custom `end-user` header
 
 gatsby-slide
 
@@ -174,6 +174,4 @@ This task shows you how to gradually migrate traffic from an older version to a 
 
 ### Results
 
-  - migrating traffic from an old to new version of the `reviews` service using Istio’s weighted routing feature
-
-gatsby-slide
+  - migrating traffic from an old to a new version of the "reviews" service using Istio’s weighted routing feature
