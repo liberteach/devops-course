@@ -75,6 +75,8 @@ gatsby-slide
   - [What is Istio?](https://www.youtube.com/watch?v=1iyFq2VaL5Y) (4 min)
   - [Istio Service Mesh Explained](https://www.youtube.com/watch?v=6zDrLvpfCK4) (5 min)
   - [Kubernetes drone demo: Using Istio to manage app traffic](https://www.youtube.com/watch?v=QTD-gqS2E7w) (2 min) - representing a canary rollout
+  - [Istio in Production: Day 2 Traffic Routing (Cloud Next '19)
+](https://www.youtube.com/watch?v=7cINRP0BFY8) (42 min)
 
 ## Links
 
@@ -142,6 +144,8 @@ Do everything up to the [Next steps](https://istio.io/docs/setup/getting-started
 
   - running [Bookinfo example application](https://istio.io/docs/examples/bookinfo/) and available at `http://$GATEWAY_URL/productpage` (where $GATEWAY_URL - is specific IP and PORT for every deployment)
   - running [Kiali dashboard](https://kiali.io/) with an overview of your mesh with the relationships between the services, like on [this image](https://istio.io/docs/setup/getting-started/kiali-example2.png).
+
+  ![this image](https://istio.io/docs/setup/getting-started/kiali-example2.png)
 
 gatsby-slide
 
