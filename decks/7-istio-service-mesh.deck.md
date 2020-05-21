@@ -33,7 +33,7 @@ Provides **transparent and language-independent** way to flexible and easily aut
   - Observability
   - Secure
 
-![Service Mesh](../img/istio/service-mesh.png)
+![Service Mesh](img/istio/service-mesh.png)
 
 ## Platforms implementing a service mesh:
 
@@ -52,7 +52,7 @@ gatsby-slide
 
 **Istio** - a platform that implements a service mesh.
 
-![Istio logo](../img/istio/istio-logo.jpg)
+![Istio logo](img/istio/istio-logo.jpg)
 
 **Benefits**
 
@@ -92,7 +92,7 @@ gatsby-slide
 - **Sidecar proxies** ([Envoy](https://www.envoyproxy.io/)) sit next to workloads (in Kubernetes pods)
 - Proxies **mediate** all inbound/outbound traffic
 
-![Sidecar proxies](../img/istio/1_side.png)
+![Sidecar proxies](img/istio/1_side.png)
 
 gatsby-slide
 
@@ -103,13 +103,13 @@ gatsby-slide
 - **Control Plane** deployed to Kubernetes
 - **Isito API** installed as Kubernetes CRDs (Custom Resource Definitions)
 
-![Control Plane](../img/istio/2_control_pane.png)
+![Control Plane](img/istio/2_control_pane.png)
 
 gatsby-slide
 
 # How Istio works
 
-![Istio architecture](../img/istio/istio.jpg)
+![Istio architecture](img/istio/istio.jpg)
 
 gatsby-slide
 
@@ -121,7 +121,7 @@ gatsby-slide
 
 Bookinfo example application:
 
-![Bookinfo application](../img/istio/bookinfo.png)
+![Bookinfo application](img/istio/bookinfo.png)
 
 gatsby-slide
 
