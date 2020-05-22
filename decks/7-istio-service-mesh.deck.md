@@ -2,6 +2,10 @@
 title: Microservices & Service mesh - Istio
 ---
 
+# Service Mesh by Istio
+
+gatsby-slide
+
 # Microservices architecture
 
 **Microservices (microservice architecture)** - a style that structures an application as a collection of services that are:
@@ -12,7 +16,7 @@ title: Microservices & Service mesh - Istio
 - Organized around business capabilities
 - Owned by a small team
 
-## Monolithic architecture (old school)
+# Monolithic architecture
 
 **Monolith means composed all in one piece.** The Monolithic application describes a single-tiered software application in which different components combined into a single program from a single platform.
 
