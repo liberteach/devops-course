@@ -6,7 +6,8 @@ title: Introduction to DevOps
 
 Sergei Kudinov    
 Developer and Data Engineer at [Adaltas](https://www.adaltas.com/)   
-sergei@adaltas.com
+sergei@adaltas.com   
+Some words
 
 [Adaltas](https://www.adaltas.com/) (since 2004)   
 Big Data, DevOps & SRE, Development, Open Source
