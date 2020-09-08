@@ -4,7 +4,7 @@ title: Introduction to DevOps
 
 # About
 
-Sergei Kudinov 1111111   
+Sergei Kudinov    
 Developer and Data Engineer at [Adaltas](https://www.adaltas.com/)   
 sergei@adaltas.com
 
